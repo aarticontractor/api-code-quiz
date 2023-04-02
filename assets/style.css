@@ -1,83 +1,163 @@
+/* Set the background color for the body */
 body {
     background-color: rgb(23, 23, 27);
-}
-
-header {
+  }
+  
+  /* Set the properties for the header */
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     background-color: #d2d3d0;
-    border-block: 5px solid rgb(28, 65, 42);
+    border: 5px solid rgb(28, 65, 42);
   }
   
+  /* Set the properties for the h1 element */
   h1 {
     font-size: 50px;
     margin: 0;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
-
-
-.box1 {
-    width: 50%; /* Adjust the width as needed */
-    height: 700px; /* Adjust the height as needed */
-    background-color:  #d2d3d0; /* Set the background color */
-    float: left; /* Float the box to the left */
-    padding: 40px; /* Add padding to the box */
-    box-sizing: border-box; /* Include padding and border in the box's total width and height */
-    border: 20px solid  rgb(28, 65, 42);
+  
+  /* Set the properties for the box1 element */
+  .box1 {
+    width: 50%;
+    height: 700px;
+    background-color: #d2d3d0;
+    float: left;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 20px solid rgb(28, 65, 42);
     margin: 40px;
-}
-
-.box1 p {
+  }
+  
+  /* Set the properties for the p element inside the box1 element */
+  .box1 p {
     font-size: 25px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-
-button {
-    display: inline-block; 
-    width: 130px; 
-    height: 70px; 
-    background-color:  rgb(28, 65, 42);
-    color: #fff; 
-    text-align: center; 
-    line-height: 20px; 
-    margin: 30px auto 0; /* Add margin to the button to center it horizontally and push it to the top */
+    margin-top: 20px;
+  }
+  
+  /* Set the properties for the button element */
+  button {
+    display: inline-block;
+    width: 130px;
+    height: 70px;
+    background-color: rgb(28, 65, 42);
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    margin: 30px auto 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-}
-
-.box2 {
-    width: 40%; /* Adjust the width as needed */
-    height: 300px; /* Adjust the height as needed */
-    background-color:  #d2d3d0;/* Set the background color */
-    float: right; /* Float the box to the left */
-    padding: 40px; /* Add padding to the box */
-    box-sizing: border-box; /* Include padding and border in the box's total width and height */
-    border: 20px solid  rgb(28, 65, 42);
-    margin: 40px;
-    text-align: center;
-    font-size: 25px;
-}
-
-.box3 {
-    width: 40%; /* Adjust the width as needed */
-    height: 320px; /* Adjust the height as needed */
-    background-color: #d2d3d0; /* Set the background color */
-    float: right; /* Float the box to the left */
-    padding: 40px; /* Add padding to the box */
-    box-sizing: border-box; /* Include padding and border in the box's total width and height */
+  }
+  
+  /* Set the properties for the box2 element */
+  .box2 {
+    width: 40%;
+    height: 300px;
+    background-color: #d2d3d0;
+    float: right;
+    padding: 40px;
+    box-sizing: border-box;
     border: 20px solid rgb(28, 65, 42);
     margin: 40px;
     text-align: center;
     font-size: 25px;
-}
-
-#time-left {
+  }
+  
+  /* Set the properties for the box3 element */
+  .box3 {
+    width: 40%;
+    height: 320px;
+    background-color: #d2d3d0;
+    float: right;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 20px solid rgb(28, 65, 42);
+    margin: 40px;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  /* Set the properties for the time-left element */
+  #time-left {
     font-size: 50px;
-}
+  }
+  
+  /* Set the properties for the modal and modal-content elements */
+  .modal {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+  }
+  
+ /* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* High score button */
+  .highscore-button {
+    float: right;
+  }
+  
+  /* Choice button */
+  .choice-button {
+    display: block;
+    width: 70%;
+    margin-top: 1%;
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #d2d3d0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Table heading */
+  th {
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+    padding-right: 50px;
+  }
+  
+  /* Table cell */
+  td {
+    font-size: 25px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
