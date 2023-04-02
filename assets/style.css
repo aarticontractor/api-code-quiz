@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(23, 23, 27);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #d2d3d0;
+    border-block: 5px solid rgb(28, 65, 42);
+  }
+  
+  h1 {
+    font-size: 50px;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif
+  }
+
+
+.box1 {
+    width: 50%; /* Adjust the width as needed */
+    height: 700px; /* Adjust the height as needed */
+    background-color:  #d2d3d0; /* Set the background color */
+    float: left; /* Float the box to the left */
+    padding: 40px; /* Add padding to the box */
+    box-sizing: border-box; /* Include padding and border in the box's total width and height */
+    border: 20px solid  rgb(28, 65, 42);
+    margin: 40px;
+}
+
+.box1 p {
+    font-size: 25px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+button {
+    display: inline-block; 
+    width: 130px; 
+    height: 70px; 
+    background-color:  rgb(28, 65, 42);
+    color: #fff; 
+    text-align: center; 
+    line-height: 20px; 
+    margin: 30px auto 0; /* Add margin to the button to center it horizontally and push it to the top */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.box2 {
+    width: 40%; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    background-color:  #d2d3d0;/* Set the background color */
+    float: right; /* Float the box to the left */
+    padding: 40px; /* Add padding to the box */
+    box-sizing: border-box; /* Include padding and border in the box's total width and height */
+    border: 20px solid  rgb(28, 65, 42);
+    margin: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.box3 {
+    width: 40%; /* Adjust the width as needed */
+    height: 320px; /* Adjust the height as needed */
+    background-color: #d2d3d0; /* Set the background color */
+    float: right; /* Float the box to the left */
+    padding: 40px; /* Add padding to the box */
+    box-sizing: border-box; /* Include padding and border in the box's total width and height */
+    border: 20px solid rgb(28, 65, 42);
+    margin: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#time-left {
+    font-size: 50px;
+}
