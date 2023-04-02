@@ -252,8 +252,38 @@ nameForm.addEventListener("submit", function(event) {
 
 
   
-  
+//    Close modals when the user clicks the close button
+for (let i = 0; i < closeButton.length; i++) {
+    closeButton[i].addEventListener("click", function() {
+      const modal = this.parentNode.parentNode;
+      modal.style.display = "none";
+    });
+  }
 
+
+  function showHighScores() {
+    highscoreModal.style.display = "block";
+    var highScores = JSON.parse(localStorage.getItem("scoreName"));
+    highScores.sort(function(a, b) {
+      return b.score - a.score;
+    });
+    
+    // Display high scores in a table
+    var highScoresHtml = "";
+    var minLength = Math.min(highScores.length, 10);
+    for (var i = 0; i < minLength; i++) {
+      highScoresHtml += "<tr><td>" + highScores[i].name + "</td><td>" + highScores[i].score + "</td></tr>";
+    }
+    highscoresContainer.innerHTML = highScoresHtml;
+  
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  }
+
+
+  
 function revealScore() {
     clearInterval(timer);
     nameModal.style.display = "block";
