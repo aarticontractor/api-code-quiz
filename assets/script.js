@@ -120,7 +120,66 @@ function startQuiz() {
     timer = setInterval(updateTimer, 1000);
 }
 
+function correctOrWrong(buttonValue) {
 
+    buttonClicked = buttonValue;
+
+    console.log("Correct or Wrong method called");
+    if (currentQuestion.answer === currentQuestion.choices[0] && buttonClicked === 1) {
+        // Button1 is correct
+        quizMessage.textContent = "Correct";
+
+        // Increase the score as well
+        score ++;
+        rightDisplay.textContent = score;
+        nextQuestion();
+
+// do something with the score and name, like save it to a database or display it on the page
+
+
+
+      } else if (currentQuestion.answer === currentQuestion.choices[1] && buttonClicked === 2) {
+        // Button2 is correct
+        quizMessage.textContent = "Correct";
+        // Increase the score as well
+        score ++;
+        rightDisplay.textContent = score;
+        nextQuestion();
+
+      } else if (currentQuestion.answer === currentQuestion.choices[2] && buttonClicked === 3) {
+        // Button3 is correct
+        quizMessage.textContent = "Correct";
+
+        // Increase the score as well
+        score ++;
+        rightDisplay.textContent = score;
+        nextQuestion();
+
+      } else if (currentQuestion.answer === currentQuestion.choices[3] && buttonClicked === 4) {
+        // Button4 is correct
+        quizMessage.textContent = "Correct";
+
+        // Increase the score as well
+        score ++;
+        rightDisplay.textContent = score;
+        nextQuestion();
+
+      } else {
+        // answer is wrong
+        quizMessage.textContent = "Wrong";
+        wrong ++;
+        console.log("Here");
+
+        wrongDisplay.textContent = wrong;
+        if (wrong === 3) {
+            revealScore();
+        }else {
+        nextQuestion();
+        }
+
+        // Game over - User lost
+      }
+}
 
 function updateTimer() {
     remainingTime--;
@@ -134,8 +193,6 @@ function updateTimer() {
         // Let user save the score
     }
 }
-
-
 
 
 
