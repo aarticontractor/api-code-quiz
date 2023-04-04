@@ -1,17 +1,17 @@
-# JavaScript: Password Generator
+# Web API- Coding quiz
 
 ## Description
 
 [Visit the Deployed Site](https://aarticontractor.github.io/api-code-quiz/)
 <br>
 
-In this project I was supposed to build a timed coding quiz with multiple-choice questions from scratch. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code. It has a clean, polished, and responsive user interface.  Basically, the coding quiz features multiple choice questions on JavaScript, a timer, a pop-up to submit the user's name and a prompt to view the top 10 highest scores.
+In this project I was supposed to build a timed coding quiz with multiple-choice questions from scratch. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code and web API's. It has a clean, polished, and responsive user interface. Basically, the coding quiz features multiple choice questions on JavaScript, a timer, a pop-up to submit the user's name and a prompt to view the top 10 highest scores.
 
 Displayed in the below image is the pseudocode flowchart of this project which entails the basic high-level functionalities that will occur in the application for better understanding of how the app was made:
 <br>
 <br>
 
-![alt text](assets)
+![alt text](assets/flowchart.jpeg)
 
 
 <br>
@@ -25,7 +25,7 @@ Displayed in the below image is the pseudocode flowchart of this project which e
 | CSS     | [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)      |   
 | Git | [https://git-scm.com/](https://git-scm.com/)     |  
 | JavaScript | [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)     |  
-
+| Web API | [https://developer.mozilla.org/en-US/docs/Web/API](https://developer.mozilla.org/en-US/docs/Web/API)  |
 
 <br>
 
@@ -51,7 +51,7 @@ When the start button is clicked, a 40 second timer starts and user is presented
 <br>
 <br>
 
-![alt text](assets/)
+![alt text](assets/next-ques-and-timer.gif)
 
 <br>
 <br>
@@ -63,7 +63,7 @@ When the game is over, the user can submit their name and view high scores by cl
 <br>
 <br>
 
-![alt text](assets/)
+![alt text](assets/Submit-name.jpg)
 
 <br>
 <br>
@@ -170,7 +170,7 @@ nameForm.addEventListener("submit", function(event) {
 - https://beautifier.io/
 - https://onecompiler.com/javascript/3z45t4b2m
 - https://cloudconvert.com/webm-to-gif
-- 
+- https://developer.mozilla.org/en-US/docs/Web/API
 
 
 <br>
