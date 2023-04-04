@@ -96,6 +96,8 @@ var questions = [
         answer: "6"
     }];
 
+
+    
 function getRandomQuestion() {
     const randomIndex = Math.floor(Math.random() * questions.length);
     return questions.splice(randomIndex, 1)[0];
@@ -114,7 +116,7 @@ function startQuiz() {
     quizMessage.textContent = "";
     
 
-    console.log("Method already finished");
+    
     // Start timer
     clearInterval(timer);
     timer = setInterval(updateTimer, 1000);
@@ -242,7 +244,8 @@ nameForm.addEventListener("submit", function(event) {
       
       if (index > -1) {
         existingData[index].score = score;
-      } else {
+      } 
+      else {
         existingData.push(scoreData);
       }
       
@@ -283,7 +286,7 @@ for (let i = 0; i < closeButton.length; i++) {
   }
 
 
-  
+
 function revealScore() {
     clearInterval(timer);
     nameModal.style.display = "block";
