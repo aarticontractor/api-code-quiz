@@ -1,82 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz</title>
     <link rel="stylesheet" href="assets/style.css">
-</head>
-
-<header>
+  </head>
+  <header>
     <h1> JavaScript Coding Quiz</h1>
     <button id="start-button">START QUIZ!</button>
     <button id="highscore-button" onclick="showHighScores()">Show High Scores</button>
-
   </header>
-
-
-<body>
-          <div class="box1">
-             <p>Try to answer the following code related questions within the time limit. Good Luck!</p>
-             <p id="question-display"></p>
-               <br><br>
-               <button id="button1" class="choice-button"></button>
-               <button id="button2" class="choice-button"></button>
-               <button id="button3" class="choice-button"></button>
-               <button id="button4" class="choice-button"></button>
-               
-             <p id="quiz-message"></p>
-          </div>
-              <div class="box2">
-                 <p id="timer">⌛ Time left: <br> <span id="time-left">0</span> <br>seconds</p>
-              </div>
-                   <div class="box3">
-                     <p>🥇 Right answers: <span id="right">0</span></p>
-                     <p>😤 Wrong answers: <span id="wrong">0</span></p>
-                     <p>🌟<span id="your-final-score">Your Last Score is: 0</span></p>
-                   </div>
-            <div id="nameModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2 id="your-score"></h3>
-                <h3>Enter Your Name</h3>
-                
-                <form id="nameForm">
-                <label for="nameInput">Name:</label>
-                <input type="text" id="nameInput">
-                <button type="submit">Submit</button>
-                </form>
-            </div>
-            </div>
-            
-            <div id="greetingModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-            </div>
-                  </div>
-
-                  <!-- The Modal -->
-
-  <div id="highscore-modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>High Scores</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody id="highscores">
-        </tbody>
-      </table>
+  <body>
+    <div class="box1">
+      <p>Try to answer the following code related questions within the time limit. Good Luck!</p>
+      <p id="question-display"></p>
+      <br>
+      <br>
+      <button id="button1" class="choice-button"></button>
+      <button id="button2" class="choice-button"></button>
+      <button id="button3" class="choice-button"></button>
+      <button id="button4" class="choice-button"></button>
+      <p id="quiz-message"></p>
     </div>
-  </div>
-  
-
-
-
+    <div class="box2">
+      <p id="timer">⌛ Time left: <br>
+        <span id="time-left">0</span>
+        <br>seconds
+      </p>
+    </div>
+    <div class="box3">
+      <p>🥇 Right answers: <span id="right">0</span>
+      </p>
+      <p>😤 Wrong answers: <span id="wrong">0</span>
+      </p>
+      <p>🌟 <span id="your-final-score">Your Last Score is: 0</span>
+      </p>
+    </div>
+    <div id="nameModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="your-score">
+          </h3>
+          <h3>Enter Your Name</h3>
+          <form id="nameForm">
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput">
+            <button type="submit">Submit</button>
+          </form>
+      </div>
+    </div>
+    <div id="greetingModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="highscore-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>High Scores</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody id="highscores"></tbody>
+        </table>
+      </div>
+    </div>
     <script src="assets/script.js"></script>
-</body>
+  </body>
 </html>
